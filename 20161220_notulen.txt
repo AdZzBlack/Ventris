@@ -1,0 +1,16 @@
+1. taruh database di server venus
+2. omzet (per bulan)
+3. ditambah price list
+4. notif schedule task yang dibuatkan untuk bex sudah keluar
+	kalo dari notif, dibuka masi error!!!!!!!
+	kalo dari dashboard sudah oke
+5. saat dibuka notifnya, harusnya ada tombol confirm, tapi yang keluar tombol close
+6. nambah 1 field isinya keterangan bebas, kalau tidak diisi, button finish tidak bisa dipencet (Feedback)
+7. jam remindernya bisa disetting (jadi jamnya harus jam 3, reminder munculnya misal disetting 20 menit, jadi remindernya keluarnya jam 2.40)
+	jam remindernya dikasi pilihan (misal standart awalnya, reminder muncul 30 menit sebelum jam yang dijadwalkan)
+8. remindernya ada 2: 1 hari sebelumnya & sekian menit sebelumnya sesuai dengan menit yang ditentukan (ada tambahan field yang harus diinputkan)
+
+
+
+9. omset sampai dengan hari kemarin dibandingkan dengan omset pada hari ini
+10. tambahkan reminder omset

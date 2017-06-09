@@ -1,0 +1,32 @@
++ tidak bisa login di 2 hp berbeda
++ u/ program dekstop, di master barang harus bisa browse foto
+
+====tampilan awal
++ omzet (per bulan)
+
+====stock report
++ kasi thumbnail (foto kecil) untuk di daftar list? (berat atau tidak?)
++ ditambah price list
+
+====Schedule Task
++ notif schedule task yang dibuatkan untuk bex sudah keluar
+	kalo dari notif, dibuka masi error!!!!!!!
+	kalo dari dashboard sudah oke
++ saat dibuka notifnya, harusnya ada tombol confirm, tapi yang keluar tombol close
++ nambah 1 field isinya keterangan bebas, kalau tidak diisi, button finish tidak bisa dipencet
++ jam remindernya bisa disetting (jadi jamnya harus jam 3, reminder munculnya misal disetting 20 menit, jadi remindernya keluarnya jam 2.40)
+	jam remindernya dikasi pilihan (misal standart awalnya, reminder muncul 30 menit sebelum jam yang dijadwalkan)
++ remindernya ada 2: 1 hari sebelumnya & sekian menit sebelumnya sesuai dengan menit yang ditentukan (ada tambahan field yang harus diinputkan)
++ pengecekan tanggal mundur tidak boleh
+
+====sales tracking
++ u/ Android 6.00 (marshmallow), sales trackingnya masi error saat dipencet nama orang yang ada di list
+
+====sales order
++ semua browse dirapikan field2nya sesuai yang di program lama
++ u/ manager dan owner, bisa approve SO
++ tambah field FJ gabung
+
+
++ bikin form tambah customer, tapi DIBIKINKAN TABEL BARU DULU (jadi tabel temp), setelah diapprove baru masuk ke table customer yang sebenarnya
+	tambahan field yang harus required: no telp/hp, alamat (field required lain ikutkan dengan yang di program lama)

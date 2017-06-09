@@ -1,0 +1,70 @@
+~ Database :
+===* hapus separuh data di venus supaya bisa diupload ga kegeden biar coba online
+
+===+ venus
+[+] muser_android
+tambah field :	- gcmid varchar 200
+		- jenisuser (kalau bisa dapat dari select ga usah, kalau mau lebih gampang select tambahno ae)
+[+] mhcustomer
+tambah field :	- latitude varchar 200
+		- longitude varchar 200
+		? foto varchar 200 (nama foto berdasarkan kodeuser biar unique)
+		? path_foto varchar 200
+
+==+ venus-android (venus_chat ganti venus_android)
+[+] ttracking
+tambah field :	- nomoruser
+		- latitude
+		- longitude
+		- datetime		
+[+] tsetting :	- nama		(contoh untuk pengaturan berapa menit sekali tracking)
+		- nilai
+[+] tjadwal :	- nomorusermanager
+		- nomoruserbex
+		- nomorcustomer
+		- date & time (digabung / dipisah terserah, mungkin nanti tampil e di apps jadi 2 field ada jam mb tanggal)
+		- datetime terkunjungi (ini nanti dari menu NFC updatenya)
+		- flag (kalau sudah terkunjungi ganti status tidak ditampilkan)
+
+nb :	- ? = sapa tahu dibutuhkan
+	- nama field mengikuti format ko teguh
+	- sementara ini dulu database
+	- kalau sudah tolong databasenya dua2 diupload ke server : 202.150.213.85 , username : antonnw_venus , password : antonnw_venus (kalau internet lemot, upload ke dropbox nanti tk uploadno)
+
+~ Web service
+[+] login & dashboard : 
+	input	: username, password, gcmid
+	output	: nama user, jenis user, omzet, target
+[+] group message : 
+	input	: chat, waktu
+	output	: hasil chat, waktu
+[+] private message : 
+	input	: nomoruserasal, nomorusertujuan, chat, waktu
+	output	: nomoruserasal, nomorusertujuan, hasil chat, waktu
+[+] nfc :
+	input	: nomoruser, nomorcustomer, waktu check in
+	output	: status berhasil checkin
+[+] schedule task [Manager]
+	input	: nomorusermanager, nomoruserbex, nomorcustomer, date & time
+	output	: status sukses perintah, list perintah
+[+] schedule task [BEX]
+	input	: nomoruser
+	output	: jadwal user
+[+] sales tracking [BEX]
+	input	: nomoruser, latitude, longitude, waktu
+	output	: -
+[+] sales tracking [manager above]
+	input	: nomoruserbex, range waktu
+	output	: latitude, longitude, waktu
+[+] stock report
+	input	: nomorbarang
+	output	: stock marketing, stock fisik
+[?] customer :
+	input	: foto, nama foto, path foto, latitude, longitude
+	output	: status berhasil update
+[+] request data (terpisah) :
+	input	: ?
+	output	: list sales, list customer, list barang
+
+nb :	- ? = sapa tahu dibutuhkan
+	- sementara ini dulu web service
