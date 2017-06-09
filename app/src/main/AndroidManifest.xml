@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.antobo.apps.ventris" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <permission android:name="com.antobo.apps.ventris.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+    <uses-permission android:name="com.antobo.apps.ventris.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.SEND" />
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:name="android.support.multidex.MultiDexApplication"
+        android:configChanges="orientation"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme" >
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.antobo.apps.ventris" />
+            </intent-filter>
+            <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+        </receiver>
+
+        <service
+            android:name=".NotificationListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".GCMInstanceIDRegistrationService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".BackgroundServiceReceiver" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".LocationService"
+            android:exported="false" />
+
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/Theme.Design.NoActionBar"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SelectServer"
+            android:theme="@style/Theme.Design.NoActionBar"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Login"
+            android:theme="@style/Theme.Design.NoActionBar"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Index"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBG9t9c6vFwDV-WG9jBEWTKFAlsZFx_mI4" />
+    </application>
+
+</manifest>

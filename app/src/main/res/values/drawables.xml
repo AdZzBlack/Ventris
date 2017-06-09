@@ -1,0 +1,16 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item name="ic_menu_dashboard" type="drawable">@drawable/dashboard</item>
+    <item name="ic_menu_contact" type="drawable">@drawable/contact</item>
+    <item name="ic_menu_salesorder" type="drawable">@drawable/salesorder</item>
+    <item name="ic_menu_groupmessage" type="drawable">@drawable/groupmessage</item>
+    <item name="ic_menu_privatemessage" type="drawable">@drawable/privatemessage</item>
+    <item name="ic_menu_nfctools" type="drawable">@drawable/nfctools</item>
+    <item name="ic_menu_stockreport" type="drawable">@drawable/stockreport</item>
+    <item name="ic_menu_scheduletask" type="drawable">@drawable/scheduletask</item>
+    <item name="ic_menu_salestracking" type="drawable">@drawable/salestracking</item>
+    <item name="ic_menu_report" type="drawable">@drawable/report</item>
+    <item name="ic_menu_pricelist" type="drawable">@drawable/pricelist</item>
+    <item name="ic_menu_addcustomer" type="drawable">@drawable/addcustomer</item>
+    <item name="ic_menu_approvecustomer" type="drawable">@drawable/approvecustomer</item>
+    <item name="ic_menu_security" type="drawable">@drawable/security</item>
+</resources>

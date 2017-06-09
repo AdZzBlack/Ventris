@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Sales"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text=":"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="[sales]"
+                android:id="@+id/tv_sales"
+                android:textColor="@color/colorPrimaryDark" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Total Omzet"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text=":"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="[Omzet]"
+                android:id="@+id/tv_omzet"
+                android:textColor="@color/colorPrimaryDark" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Total Target"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text=":"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="[Target]"
+                android:id="@+id/tv_target"
+                android:textColor="@color/colorPrimaryDark" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

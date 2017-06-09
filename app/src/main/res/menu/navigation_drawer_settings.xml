@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_setting"
+        android:title="@string/action_setting"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_target"
+        android:title="@string/action_target"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_password"
+        android:title="@string/action_password"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_server"
+        android:title="@string/action_server"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_logout"
+        android:title="@string/action_logout"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+</menu>

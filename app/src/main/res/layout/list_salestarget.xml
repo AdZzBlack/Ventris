@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="[ Nomor ]"
+        android:id="@+id/tv_nomor"
+        android:textColor="#ffffff"
+        android:layout_margin="10dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Periode     : "
+        android:id="@+id/tv_textTanggal"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="[Bulan]"
+        android:id="@+id/tv_bulan"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_toRightOf="@+id/tv_textTanggal"
+        android:layout_alignBaseline="@+id/tv_textTanggal"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="[Tahun]"
+        android:id="@+id/tv_tahun"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_toRightOf="@+id/tv_bulan"
+        android:layout_alignBaseline="@+id/tv_bulan"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Bex            : "
+        android:id="@+id/tv_textBex"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/tv_textTanggal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="[Bex]"
+        android:id="@+id/tv_bex"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_toRightOf="@+id/tv_textBex"
+        android:layout_alignBaseline="@+id/tv_textBex"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Target       : "
+        android:id="@+id/tv_textTarget"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/tv_textBex"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="[Target]"
+        android:id="@+id/tv_target"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_toRightOf="@+id/tv_textTarget"
+        android:layout_alignBaseline="@+id/tv_textTarget"
+        android:layout_marginLeft="10dp" />
+</RelativeLayout>

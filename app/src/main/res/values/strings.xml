@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Ventris</string>
+
+    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_logout">Logout</string>
+    <string name="action_server">Change Server</string>
+    <string name="action_setting">Setting</string>
+    <string name="action_target">Sales Target</string>
+    <string name="action_password">Change Password</string>
+
+    <string name="google_server_key">AIzaSyA8tLQw3T5sH3D_5OWZPKveTyJRstVqSHw</string>
+
+    <string-array name="list_tipepekerjaan">
+        <item>Standart</item>
+        <item>NFC</item>
+    </string-array>
+
+    <string-array name="list_jenisjadwal">
+        <item>Custom Note</item>
+        <item>Customer</item>
+        <item>Prospecting Customer</item>
+        <item>Meeting</item>
+        <item>Group Meeting</item>
+    </string-array>
+
+    <string-array name="list_tracking">
+        <item>GPS Only</item>
+        <item>GPS and Network</item>
+    </string-array>
+
+    <string-array name="list_ppnexp">
+        <item>PPN</item>
+        <item>Exp</item>
+    </string-array>
+
+    <string-array name="list_pembayaran">
+        <item>CBD-TC</item>
+        <item>CBD</item>
+        <item>COD</item>
+        <item>CREDIT</item>
+    </string-array>
+
+    <string-array name="list_bulan">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+</resources>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="[ Nomor ]"
+        android:id="@+id/tv_nomor"
+        android:textColor="#ffffff"
+        android:layout_margin="10dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="[ Manager Nomor ]"
+        android:id="@+id/tv_managernomor"
+        android:textColor="#ffffff"
+        android:layout_margin="10dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="[ Tipe ]"
+        android:id="@+id/tv_tipe"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="[ Tanggal ]"
+        android:id="@+id/tv_tanggal"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_toRightOf="@+id/tv_tipe"
+        android:layout_alignBaseline="@+id/tv_tipe"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="[ Jam ]"
+        android:id="@+id/tv_jam"
+        android:layout_below="@+id/tv_tipe"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_toRightOf="@+id/tv_tanggal"
+        android:layout_alignBaseline="@+id/tv_tipe"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Type         : "
+        android:id="@+id/textJenis"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/tv_tipe"
+        android:layout_alignStart="@+id/tv_tipe"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="[ Jenis Jadwal ]"
+        android:id="@+id/tv_jenisjadwal"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_toRightOf="@+id/textJenis"
+        android:layout_alignBaseline="@+id/textJenis"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Customer : "
+        android:id="@+id/textView"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/textJenis"
+        android:layout_alignStart="@+id/textJenis"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="[ Nama Customer ]"
+        android:id="@+id/tv_namacustomer"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="[ Jabatan ] : "
+        android:id="@+id/tv_jabatan"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/tv_tipe"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="[ Nama Manager / BEX ]"
+        android:id="@+id/tv_nama"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_toRightOf="@+id/tv_jabatan"
+        android:layout_alignBaseline="@+id/tv_jabatan"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="[ Keterangan ]"
+        android:id="@+id/tv_keterangan"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/tv_jabatan"
+        android:layout_alignStart="@+id/tv_tipe"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

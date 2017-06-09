@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="[ Nomor ]"
+        android:id="@+id/tv_nomor"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="[ Latitude ]"
+        android:id="@+id/tv_latitude"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="[ Longitude ]"
+        android:id="@+id/tv_longitude"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/iv_jabatan"
+        android:layout_below="@+id/tv_nomor"
+        android:layout_margin="15dp"
+        android:background="@drawable/roundcorner"
+        android:elevation="10dp"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="[ Nama ]"
+        android:id="@+id/tv_nama"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_toRightOf="@+id/iv_jabatan"
+        android:layout_alignTop="@+id/iv_jabatan" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="[ HP ]"
+        android:id="@+id/tv_hp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_toRightOf="@+id/tv_nama"
+        android:layout_alignTop="@+id/tv_nama"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="[ Location ]"
+        android:id="@+id/tv_location"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/tv_nama"
+        android:layout_toRightOf="@+id/iv_jabatan"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp" />
+
+</RelativeLayout>

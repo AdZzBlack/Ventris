@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll_1"
+        android:layout_marginTop="10dp">
+
+        <View
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_weight=".03" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Code"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".057"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=":"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/tv_kodebarang"
+            android:text="[Kode]"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorPrimaryDark"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll_2"
+        android:layout_below="@+id/ll_1" >
+
+        <View
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_weight=".03" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Name"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".057"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=":"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/tv_namabeli"
+            android:text="[nama]"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorPrimaryDark"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll_3"
+        android:layout_below="@+id/ll_2" >
+
+        <View
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_weight=".03" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Warehouse"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".057"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=":"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/tv_gudang"
+            android:text="[gudang]"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorPrimaryDark"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll_8"
+        android:layout_below="@+id/ll_3" >
+
+        <View
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_weight=".03" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Shade"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".057"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=":"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/tv_shade"
+            android:text="[shade]"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorPrimaryDark"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll_4"
+        android:layout_below="@+id/ll_8" >
+
+        <View
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_weight=".03" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Stock"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".057"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=":"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/tv_stock"
+            android:text="[stock]"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/tv_satuan"
+            android:text="[satuan]"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorPrimaryDark"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll_5"
+        android:layout_below="@+id/ll_4" >
+
+        <View
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_weight=".03" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Pending"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".057"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=":"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/tv_pending"
+            android:text="[pending]"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/tv_satuan1"
+            android:text="[satuan]"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorPrimaryDark"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll_6"
+        android:layout_below="@+id/ll_5" >
+
+        <View
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_weight=".03" />
+
+        <TextView
+            android:id="@+id/tv_info1"
+            android:text="[info]"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorPrimaryDark"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll_7"
+        android:layout_below="@+id/ll_6" >
+
+        <View
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_weight=".03" />
+
+        <TextView
+            android:id="@+id/tv_info2"
+            android:text="[info]"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorPrimaryDark"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ll_7"
+        android:layout_marginBottom="10dp">
+
+        <View
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_weight=".03" />
+    </LinearLayout>
+</RelativeLayout>

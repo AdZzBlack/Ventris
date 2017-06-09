@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="[ Nomor ]"
+        android:id="@+id/tv_nomor"
+        android:textColor="#ffffff"
+        android:layout_margin="10dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="[ Kode ]"
+        android:id="@+id/tv_kode"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Date            : "
+        android:id="@+id/tv_textTanggal"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/tv_kode"
+        android:layout_alignStart="@+id/tv_kode"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="[ Tanggal ]"
+        android:id="@+id/tv_tanggal"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_toRightOf="@+id/tv_textTanggal"
+        android:layout_alignBaseline="@+id/tv_textTanggal"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Sent Date   : "
+        android:id="@+id/tv_textTanggalkirim"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/tv_textTanggal"
+        android:layout_alignStart="@+id/tv_textTanggal"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="[ Tanggal Kirim ]"
+        android:id="@+id/tv_tanggalkirim"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_toRightOf="@+id/tv_textTanggalkirim"
+        android:layout_alignBaseline="@+id/tv_textTanggalkirim"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Warehouse : "
+        android:id="@+id/textGudang"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/tv_textTanggalkirim"
+        android:layout_alignStart="@+id/tv_textTanggalkirim"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="[ Gudang ]"
+        android:id="@+id/tv_gudang"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_toRightOf="@+id/textGudang"
+        android:layout_alignBaseline="@+id/textGudang"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Customer   : "
+        android:id="@+id/textCustomer"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/textGudang"
+        android:layout_alignStart="@+id/textGudang"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="[ Nama Customer ]"
+        android:id="@+id/tv_customer"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_toRightOf="@+id/textCustomer"
+        android:layout_alignBaseline="@+id/textCustomer"
+        android:layout_marginLeft="10dp" />
+
+
+</RelativeLayout>

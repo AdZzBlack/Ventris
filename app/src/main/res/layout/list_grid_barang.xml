@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/tv_nomor"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/tv_nomorsatuanharga"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/tv_nomorsatuanunit"
+        android:visibility="gone" />
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <!-- 2 columns -->
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="[ Kode dan Nama Barang ]"
+                android:id="@+id/tv_barang"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_span= "8"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Jumlah"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text=":"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="-"
+                android:id="@+id/tv_jumlahharga"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="-"
+                android:id="@+id/tv_satuanharga"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Price : "
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="-"
+                android:id="@+id/tv_harga"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_span="2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Total Unit"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text=":"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="-"
+                android:id="@+id/tv_jumlahunit"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="-"
+                android:id="@+id/tv_satuanunit"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_span="3" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp" >
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Disc 1"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text=":"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="0"
+                android:id="@+id/tv_discount1"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Disc 2 : "
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="0"
+                android:id="@+id/tv_discount2"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Disc 3 : "
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="0"
+                android:id="@+id/tv_discount3"
+                android:textColor="@color/colorPrimaryDark" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Netto"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text=":"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="-"
+                android:id="@+id/tv_netto"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_span="2" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp" >
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Total"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text=":"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="-"
+                android:id="@+id/tv_total"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_span="2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Color Shade"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text=":"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="-"
+                android:id="@+id/tv_colorshade"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_span="2" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Amount : "
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="-"
+                android:id="@+id/tv_jumlahcolorshade"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_span="2" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

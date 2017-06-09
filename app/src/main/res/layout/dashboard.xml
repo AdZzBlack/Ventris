@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?android:attr/actionBarSize"
+    tools:context=".Index">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/index_container"
+        android:background="@color/colorBackground">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Welcome, "
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="30dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="[ Nama User ]"
+            android:id="@+id/tv_namauser"
+            android:layout_toRightOf="@+id/textView"
+            android:layout_alignBaseline="@+id/textView"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_alignParentEnd="false"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Omzet : "
+            android:id="@+id/textView2"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/textView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="[ Omzet ]"
+            android:id="@+id/tv_omzet"
+            android:layout_toRightOf="@+id/textView2"
+            android:layout_alignBaseline="@+id/textView2"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_alignParentEnd="false"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Target : "
+            android:id="@+id/textView3"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/textView2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="[ Target ]"
+            android:id="@+id/tv_target"
+            android:layout_toRightOf="@+id/textView3"
+            android:layout_alignBaseline="@+id/textView3"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_alignParentEnd="false"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView3"
+            android:isScrollContainer="true"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbars="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:id="@+id/ll_1"
+                    android:orientation="horizontal" >
+
+                    <View
+                        android:layout_height="0dp"
+                        android:layout_width="0dp"
+                        android:layout_weight=".10" />
+
+                    <ImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="75dp"
+                        android:layout_weight=".20"
+                        android:id="@+id/ib_contact"
+                        android:src="@drawable/contact"
+                        android:scaleType="fitCenter"
+                        android:background="@drawable/roundcorner"
+                        android:padding="15dp"
+                        android:elevation="10dp" />
+
+                    <View
+                        android:layout_height="0dp"
+                        android:layout_width="0dp"
+                        android:layout_weight=".10" />
+
+                    <ImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="75dp"
+                        android:layout_weight=".20"
+                        android:id="@+id/ib_groupmessage"
+                        android:src="@drawable/groupmessage"
+                        android:scaleType="fitCenter"
+                        android:background="@drawable/roundcorner"
+                        android:padding="15dp"
+                        android:elevation="10dp" />
+
+                    <View
+                        android:layout_height="0dp"
+                        android:layout_width="0dp"
+                        android:layout_weight=".10" />
+
+                    <ImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="75dp"
+                        android:layout_weight=".20"
+                        android:id="@+id/ib_privatemessage"
+                        android:src="@drawable/privatemessage"
+                        android:scaleType="fitCenter"
+                        android:background="@drawable/roundcorner"
+                        android:padding="15dp"
+                        android:elevation="10dp" />
+
+                    <View
+                        android:layout_height="0dp"
+                        android:layout_width="0dp"
+                        android:layout_weight=".10" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/ll_2"
+                    android:layout_below="@+id/ll_1" >
+
+                    <View
+                        android:layout_height="0dp"
+                        android:layout_width="0dp"
+                        android:layout_weight=".10" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".30"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Contact"
+                        android:id="@+id/tv_contactt"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textAlignment="center" />
+
+                    <View
+                        android:layout_height="0dp"
+                        android:layout_width="0dp"
+                        android:layout_weight=".10" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".30"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Group Message"
+                        android:id="@+id/tv_groupmessagee"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textAlignment="center" />
+
+                    <View
+                        android:layout_height="0dp"
+                        android:layout_width="0dp"
+                        android:layout_weight=".10" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".30"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Private Message"
+                        android:id="@+id/tv_privatemessagee"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textAlignment="center" />
+
+                    <View
+                        android:layout_height="0dp"
+                        android:layout_width="0dp"
+                        android:layout_weight=".10" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/ll_3"
+                    android:layout_below="@+id/ll_2"
+                    android:layout_marginTop="10dp" >
+
+                    <View
+                        android:layout_height="0dp"
+                        android:layout_width="0dp"
+                        android:layout_weight=".10"/>
+
+                    <ImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="75dp"
+                        android:layout_weight=".20"
+                        android:id="@+id/ib_salesorder"
+                        android:src="@drawable/salesorder"
+                        android:scaleType="fitCenter"
+                        android:background="@drawable/roundcorner"
+                        android:padding="15dp"
+                        android:elevation="10dp" />
+
+                    <View
+                        android:layout_height="0dp"
+                        android:layout_width="0dp"
+                        android:layout_weight=".10" />
+
+                    <ImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="75dp"
+                        android:layout_weight=".20"
+                        android:id="@+id/ib_stockreport"
+                        android:src="@drawable/stockreport"
+                        android:scaleType="fitCenter"
+                        android:background="@drawable/roundcorner"
+                        android:padding="15dp"
+                        android:elevation="10dp" />
+
+                    <View
+                        android:layout_height="0dp"
+                        android:layout_width="0dp"
+                        android:layout_weight=".10" />
+
+                    <ImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="75dp"
+                        android:layout_weight=".20"
+                        android:id="@+id/ib_scheduletask"
+                        android:src="@drawable/scheduletask"
+                        android:scaleType="fitCenter"
+                        android:background="@drawable/roundcorner"
+                        android:padding="15dp"
+                        android:elevation="10dp" />
+
+                    <View
+                        android:layout_height="0dp"
+                        android:layout_width="0dp"
+                        android:layout_weight=".10" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/ll_4"
+                    android:layout_below="@+id/ll_3" >
+
+                    <View
+                        android:layout_height="0dp"
+                        android:layout_width="0dp"
+                        android:layout_weight=".10" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".30"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Sales Order"
+                        android:id="@+id/tv_salesorder"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textAlignment="center" />
+
+                    <View
+                        android:layout_height="0dp"
+                        android:layout_width="0dp"
+                        android:layout_weight=".10" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".30"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Stock Report"
+                        android:id="@+id/tv_stockreport"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textAlignment="center" />
+
+                    <View
+                        android:layout_height="0dp"
+                        android:layout_width="0dp"
+                        android:layout_weight=".10" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".30"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Schedule Task"
+                        android:id="@+id/tv_scheduletask"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textAlignment="center" />
+
+                    <View
+                        android:layout_height="0dp"
+                        android:layout_width="0dp"
+                        android:layout_weight=".10" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/ll_5"
+                    android:layout_below="@+id/ll_4"
+                    android:layout_marginTop="10dp" >
+
+                    <View
+                        android:layout_height="0dp"
+                        android:layout_width="0dp"
+                        android:layout_weight=".10" />
+
+                    <ImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="75dp"
+                        android:layout_weight=".20"
+                        android:id="@+id/ib_nfctools"
+                        android:src="@drawable/nfctools"
+                        android:scaleType="fitCenter"
+                        android:background="@drawable/roundcorner"
+                        android:padding="15dp"
+                        android:elevation="10dp" />
+
+                    <View
+                        android:layout_height="0dp"
+                        android:layout_width="0dp"
+                        android:layout_weight=".10" />
+
+                    <ImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="75dp"
+                        android:layout_weight=".20"
+                        android:id="@+id/ib_omzet"
+                        android:src="@drawable/omzet"
+                        android:scaleType="fitCenter"
+                        android:background="@drawable/roundcorner"
+                        android:padding="15dp"
+                        android:elevation="10dp" />
+
+                    <View
+                        android:layout_height="0dp"
+                        android:layout_width="0dp"
+                        android:layout_weight=".10" />
+
+                    <ImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="75dp"
+                        android:layout_weight=".20"
+                        android:id="@+id/ib_target"
+                        android:src="@drawable/target"
+                        android:scaleType="fitCenter"
+                        android:background="@drawable/roundcorner"
+                        android:padding="15dp"
+                        android:elevation="10dp" />
+
+                    <View
+                        android:layout_height="0dp"
+                        android:layout_width="0dp"
+                        android:layout_weight=".10" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/ll_6"
+                    android:layout_below="@+id/ll_5" >
+
+                    <View
+                        android:layout_height="0dp"
+                        android:layout_width="0dp"
+                        android:layout_weight=".10" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".30"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="NFC Tools"
+                        android:id="@+id/tv_nfctools"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textAlignment="center" />
+
+                    <View
+                        android:layout_height="0dp"
+                        android:layout_width="0dp"
+                        android:layout_weight=".10" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".30"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Omzet"
+                        android:id="@+id/tv_omzetbtn"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textAlignment="center" />
+
+                    <View
+                        android:layout_height="0dp"
+                        android:layout_width="0dp"
+                        android:layout_weight=".10" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".30"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Target"
+                        android:id="@+id/tv_targetbtn"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textAlignment="center" />
+
+                    <View
+                        android:layout_height="0dp"
+                        android:layout_width="0dp"
+                        android:layout_weight=".10" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/tv_nomor"
+        android:visibility="gone" />
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <!-- 2 columns -->
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="[ Kode dan Nama Sales ]"
+                android:id="@+id/tv_sales"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_span= "8"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Periode"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text=":"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="-"
+                android:id="@+id/tv_periode"
+                android:textColor="@color/colorPrimaryDark" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Target"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text=":"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="-"
+                android:id="@+id/tv_target"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="IDR"
+                android:textColor="@color/colorPrimaryDark" />
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

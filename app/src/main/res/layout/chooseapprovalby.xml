@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?android:attr/actionBarSize"
+    tools:context=".ChooseApprovalBy">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/chooseapprovalby_container"
+        android:background="@color/colorBackground">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lv_approvalby"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/et_chooseapprovalby" />
+
+        <ImageButton
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:id="@+id/ib_search"
+            android:src="@android:drawable/ic_search_category_default"
+            android:scaleType="fitCenter"
+            android:padding="10dp"
+            android:background="@color/colorBackground"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_chooseapprovalby"
+            android:textColor="@color/colorPrimaryDark"
+            android:singleLine="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/ib_search"
+            android:layout_toStartOf="@+id/ib_search" />
+    </RelativeLayout>
+</FrameLayout>

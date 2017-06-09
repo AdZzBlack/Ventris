@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <ImageView
+        android:id="@+id/iv_dialog"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="[ Question ]"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignBaseline="@+id/iv_dialog"
+        android:layout_toRightOf="@+id/iv_dialog"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp" />
+</RelativeLayout>

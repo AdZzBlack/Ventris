@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Menu">
+        <menu>
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_menu_dashboard"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_menu_contact"
+            android:title="Contact" />
+        <item
+            android:id="@+id/nav_groupmessage"
+            android:icon="@drawable/ic_menu_groupmessage"
+            android:title="Group Message" />
+        <item
+            android:id="@+id/nav_privatemessage"
+            android:icon="@drawable/ic_menu_privatemessage"
+            android:title="Private Message" />
+        <item
+            android:id="@+id/nav_salesorder"
+            android:icon="@drawable/ic_menu_salesorder"
+            android:title="Sales Order" />
+
+        <item
+            android:id="@+id/nav_stockreport"
+            android:icon="@drawable/ic_menu_stockreport"
+            android:title="Stock Report" />
+        <item
+            android:id="@+id/nav_scheduletask"
+            android:icon="@drawable/ic_menu_scheduletask"
+            android:title="Schedule Task" />
+        <item
+            android:id="@+id/nav_pricelist"
+            android:icon="@drawable/ic_menu_pricelist"
+            android:title="Price List" />
+        <item
+            android:id="@+id/nav_addcustomer"
+            android:icon="@drawable/ic_menu_addcustomer"
+            android:title="Add Customer" />
+        <item
+            android:id="@+id/nav_approvecustomer"
+            app:actionViewClass="android.widget.TextView"
+            android:icon="@drawable/ic_menu_approvecustomer"
+            android:title="Approve Customer" />
+    </menu>
+    </item>
+
+    <item android:title="Manage">
+        <menu>
+            <item
+                android:id="@+id/nav_nfctools"
+                android:icon="@drawable/ic_menu_nfctools"
+                android:title="NFC Tools" />
+            <item
+                android:id="@+id/nav_omzet"
+                android:icon="@drawable/omzet"
+                android:title="Omzet" />
+            <item
+                android:id="@+id/nav_target"
+                android:icon="@drawable/target"
+                android:title="Target" />
+            <item
+                android:id="@+id/nav_salestracking"
+                android:icon="@drawable/ic_menu_salestracking"
+                android:title="Sales Tracking" />
+            <item
+                android:id="@+id/nav_report"
+                android:icon="@drawable/ic_menu_report"
+                android:title="Report" />
+        </menu>
+    </item>
+
+</menu>
